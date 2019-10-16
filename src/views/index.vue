@@ -1,20 +1,15 @@
 <!--  -->
 <template>
     <div>
-        <div>
-            <router-link to="/index">Home</router-link>
-        </div>
-        <div>
-            <router-view></router-view>
-        </div>
+        这是{{page}}页面
     </div>
 </template>
-
 <script>
 export default {
-    name: 'home',
+    name: 'index',
     data: function () {
         return {
+            page: 'index'
         }
     }
 }
