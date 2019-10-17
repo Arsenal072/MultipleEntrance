@@ -34,7 +34,7 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: ExtractTextPlugin.extract({
-                    use: "css-loader"
+                    use: ['css-loader', "postcss-loader"]
                 })
             },
             {
@@ -42,7 +42,7 @@ module.exports = {
                 use: ExtractTextPlugin.extract({
                     use: ["css-loader", "less-loader"]
                 })
-            }
+            },
 
             // sass
             {
@@ -53,7 +53,7 @@ module.exports = {
             // stylus
             {
                 test: /\.styl$/,
-                use: ["vue-style-loader", "css-loader", "stylus-loader"]
+                use: ["css-loader", "postcss-loader", "less-loader"]
             },
             {
                 test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
