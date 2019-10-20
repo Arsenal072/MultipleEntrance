@@ -3,8 +3,7 @@ export default {
     routes: [
         {
             path: '/index',
-            name: 'index',
             component: index
         }
     ]
-};
+}

@@ -4,18 +4,20 @@
         这是{{page}}页面
     </div>
 </template>
+
 <script>
 export default {
-    name: 'index',
-    data: function () {
+    name: "",
+    data() {
         return {
-            page: 'index'
-        }
-    }
-}
+            page: 'no1'
+        };
+    },
+
+    components: {},
+
+    methods: {}
+};
 </script>
-<style lang="scss">
-body {
-    color: blue;
-}
+<style lang='scss' scoped>
 </style>

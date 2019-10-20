@@ -1,33 +1,32 @@
 {
   "name": "multiple-entrance",
   "version": "1.0.0",
-  "description": "vue多入口应用",
+  "description": "https://www.qinshenxue.com/article/20161118151423.html\r #vue多入口应用",
   "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --progress --hot --open --config build/webpack.dev.config.js",
+    "build": "webpack --progress --config build/webpack.prod.config.js"
+  },
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.6",
+    "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
     "css-loader": "^3.2.0",
     "file-loader": "^4.2.0",
+    "html-webpack-plugin": "^3.2.0",
     "less": "^3.10.3",
     "less-loader": "^5.0.0",
     "node-sass": "^4.12.0",
-    "postcss-loader": "^3.0.0",
     "sass-loader": "^7.3.1",
-    "stylus": "^0.54.7",
-    "stylus-loader": "^3.0.2",
     "url-loader": "^2.2.0",
     "vue": "^2.5.15",
     "vue-loader": "^14.2.1",
     "vue-router": "^3.0.1",
     "vue-template-compiler": "^2.5.15",
     "webpack": "^3.11.0",
-    "webpack-dev-server": "^2.11.1"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --hot --open",
-    "build": "webpack --progress"
+    "webpack-dev-server": "^2.11.1",
+    "webpack-merge": "^4.2.2"
   },
   "repository": {
     "type": "git",
@@ -41,6 +40,6 @@
   },
   "homepage": "https://github.com/Arsenal072/multiple-entrance#readme",
   "dependencies": {
-    "webpack": "^3.12.0"
+    "friendly-errors-webpack-plugin": "^1.7.0"
   }
 }

@@ -1,26 +1,19 @@
-<!--  -->
 <template>
     <div>
-        <div>
-            <router-link to="/index">Home</router-link>
-        </div>
-        <div>
-            <router-view></router-view>
-        </div>
+        <router-link to="/index">Home</router-link>
+        <router-view></router-view>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'home',
-    data: function () {
-        return {
-        }
-    }
-}
+    name: "",
+    data() {
+        return {};
+    },
+    components: {},
+    methods: {}
+};
 </script>
-<style lang="scss">
-body {
-    color: blue;
-}
+<style lang='scss' scoped>
 </style>
